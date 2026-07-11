@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account | Cocoa Crest</title>
+  <meta name="description" content="Login, register or manage your Cocoa Crest profile.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bestsellers.html">Bestsellers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart <span class="badge cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>My Account</h1>
+      <p>Sign in, register or view your profile.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:640px;">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="login">Login</button>
+        <button class="tab-btn" data-tab="register">Register</button>
+        <button class="tab-btn" data-tab="profile">Profile</button>
+      </div>
+
+      <div class="form-card">
+        <div class="form-note">Sign in to view your orders, saved addresses and preferences.</div>
+
+        <div class="tab-panel active" id="login">
+          <h2 style="margin-bottom:16px;">Welcome Back</h2>
+          <form data-demo data-msg="Welcome back!">
+            <div class="form-row"><label>Email</label><input type="email" required></div>
+            <div class="form-row"><label>Password</label><input type="password" required></div>
+            <button class="btn btn-block" type="submit">Login</button>
+            <div class="form-msg">Welcome back!</div>
+          </form>
+        </div>
+
+        <div class="tab-panel" id="register">
+          <h2 style="margin-bottom:16px;">Create Account</h2>
+          <form data-demo data-msg="Account created successfully!">
+            <div class="form-grid-2">
+              <div class="form-row"><label>First Name</label><input type="text" required></div>
+              <div class="form-row"><label>Last Name</label><input type="text" required></div>
+            </div>
+            <div class="form-row"><label>Email</label><input type="email" required></div>
+            <div class="form-row"><label>Password</label><input type="password" required></div>
+            <div class="form-row"><label>Confirm Password</label><input type="password" required></div>
+            <button class="btn btn-block" type="submit">Register</button>
+            <div class="form-msg">Account created successfully!</div>
+          </form>
+        </div>
+
+        <div class="tab-panel" id="profile">
+          <h2 style="margin-bottom:16px;">Your Profile</h2>
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;">
+            <div class="avatar" style="width:64px;height:64px;font-size:24px;background:var(--caramel);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;">G</div>
+            <div><strong style="color:var(--cocoa-dark);font-size:18px;">Guest User</strong><br><span class="muted">guest@cocoacrest.example</span></div>
+          </div>
+          <form data-demo data-msg="Profile saved successfully!">
+            <div class="form-row"><label>Full Name</label><input type="text" value="Guest User"></div>
+            <div class="form-row"><label>Email</label><input type="email" value="guest@cocoacrest.example"></div>
+            <div class="form-row"><label>Phone</label><input type="text" placeholder="Add phone number"></div>
+            <div class="form-row"><label>Delivery Address</label><textarea placeholder="Add your address"></textarea></div>
+            <button class="btn btn-block" type="submit">Save Changes</button>
+            <div class="form-msg">Profile saved successfully!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</div>
+          <p>Premium cocoa &amp; chocolate, crafted from responsibly sourced beans for customers and businesses worldwide.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="bestsellers.html">Bestsellers</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Get recipes, offers and new arrivals in your inbox.</p>
+          <form data-demo data-msg="Thanks for subscribing!">
+            <div class="newsletter">
+              <input type="email" placeholder="Your email" required>
+              <button class="btn" type="submit">Join</button>
+            </div>
+            <div class="form-msg">Thanks for subscribing!</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Cocoa Crest. All rights reserved. | <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a> &middot; <a href="#">Shipping &amp; Returns</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Cocoa Crest</title>
+  <meta name="description" content="Leave a review and rating for Cocoa Crest products.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bestsellers.html">Bestsellers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart <span class="badge cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Feedback</h1>
+      <p>Tell us what you think about Cocoa Crest.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="form-card">
+          <h2>Leave a Review</h2>
+          <p class="muted" style="margin-bottom:18px;">Your feedback helps us improve our products.</p>
+          <div class="form-note">Your review will appear in the list on the right after you submit it.</div>
+          <form id="feedback-form" data-msg="Thanks for your review!">
+            <div class="form-row"><label>Your Name</label><input type="text" id="fb-name" required></div>
+            <div class="form-row"><label>Email</label><input type="email" id="fb-email" required></div>
+            <div class="form-row">
+              <label>Your Rating</label>
+              <div class="star-input">
+                <input type="radio" name="rate" id="s5" value="5" checked><label for="s5">&#9733;</label>
+                <input type="radio" name="rate" id="s4" value="4"><label for="s4">&#9733;</label>
+                <input type="radio" name="rate" id="s3" value="3"><label for="s3">&#9733;</label>
+                <input type="radio" name="rate" id="s2" value="2"><label for="s2">&#9733;</label>
+                <input type="radio" name="rate" id="s1" value="1"><label for="s1">&#9733;</label>
+              </div>
+            </div>
+            <div class="form-row"><label>Product (optional)</label>
+              <select id="fb-product">
+                <option>Select a product</option>
+                <option>Dark Chocolate Bar</option>
+                <option>Milk Chocolate Bar</option>
+                <option>Assorted Truffles</option>
+                <option>Cocoa Powder</option>
+                <option>Gift Collection</option>
+              </select>
+            </div>
+            <div class="form-row"><label>Your Review</label><textarea id="fb-text" required></textarea></div>
+            <button class="btn btn-block" type="submit">Submit Review</button>
+            <div class="form-msg">Thanks for your review!</div>
+          </form>
+        </div>
+        <div>
+          <h2>Recent Reviews</h2>
+          <div id="reviews-list" style="display:flex;flex-direction:column;gap:18px;margin-top:16px;">
+        <div class="review" data-default="1">
+          <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The dark chocolate is incredibly smooth and rich. Best I have ever tasted."</p>
+          <div class="who"><div class="avatar">A</div><div><strong>Aarav Mehta</strong><small>Verified Buyer</small></div></div>
+        </div>
+        <div class="review" data-default="1">
+          <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Beautiful gift packaging and amazing quality. Highly recommend!"</p>
+          <div class="who"><div class="avatar">S</div><div><strong>Sara Khan</strong><small>Verified Buyer</small></div></div>
+        </div>
+        <div class="review" data-default="1">
+          <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p>"Great cocoa powder for baking. My brownies turned out perfect."</p>
+          <div class="who"><div class="avatar">R</div><div><strong>Riya Sharma</strong><small>Verified Buyer</small></div></div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</div>
+          <p>Premium cocoa &amp; chocolate, crafted from responsibly sourced beans for customers and businesses worldwide.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="bestsellers.html">Bestsellers</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Get recipes, offers and new arrivals in your inbox.</p>
+          <form data-demo data-msg="Thanks for subscribing!">
+            <div class="newsletter">
+              <input type="email" placeholder="Your email" required>
+              <button class="btn" type="submit">Join</button>
+            </div>
+            <div class="form-msg">Thanks for subscribing!</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Cocoa Crest. All rights reserved. | <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a> &middot; <a href="#">Shipping &amp; Returns</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

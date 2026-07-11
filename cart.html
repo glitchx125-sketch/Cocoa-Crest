@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Cocoa Crest</title>
+  <meta name="description" content="Your Cocoa Crest shopping cart.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="bestsellers.html">Bestsellers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="cart.html">Cart <span class="badge cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <p>Review your items and checkout.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="cart-root"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="images/logo-icon.png" alt="Cocoa Crest" class="brand-logo"> Cocoa Crest</div>
+          <p>Premium cocoa &amp; chocolate, crafted from responsibly sourced beans for customers and businesses worldwide.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="bestsellers.html">Bestsellers</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Get recipes, offers and new arrivals in your inbox.</p>
+          <form data-demo data-msg="Thanks for subscribing!">
+            <div class="newsletter">
+              <input type="email" placeholder="Your email" required>
+              <button class="btn" type="submit">Join</button>
+            </div>
+            <div class="form-msg">Thanks for subscribing!</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 Cocoa Crest. All rights reserved. | <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a> &middot; <a href="#">Shipping &amp; Returns</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
