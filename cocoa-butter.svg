@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#ece0cf"/>
+  <ellipse cx="200" cy="258" rx="150" ry="18" fill="#d8c6ac"/>
+  <!-- block 1 -->
+  <g>
+    <polygon points="90,210 200,210 230,185 120,185" fill="#f3e7cf"/>
+    <polygon points="90,210 90,150 120,125 120,185" fill="#e7d4b0"/>
+    <polygon points="90,150 200,150 230,125 120,125" fill="#faf2e0"/>
+    <polygon points="200,210 200,150 230,125 230,185" fill="#ddc89e"/>
+  </g>
+  <!-- block 2 (right, behind) -->
+  <g transform="translate(150,-20)">
+    <polygon points="90,210 200,210 230,185 120,185" fill="#f3e7cf"/>
+    <polygon points="90,210 90,150 120,125 120,185" fill="#e7d4b0"/>
+    <polygon points="90,150 200,150 230,125 120,125" fill="#faf2e0"/>
+    <polygon points="200,210 200,150 230,125 230,185" fill="#ddc89e"/>
+  </g>
+  <!-- small piece -->
+  <g transform="translate(60,235) scale(0.5)">
+    <polygon points="90,210 200,210 230,185 120,185" fill="#f3e7cf"/>
+    <polygon points="90,210 90,150 120,125 120,185" fill="#e7d4b0"/>
+    <polygon points="90,150 200,150 230,125 120,125" fill="#faf2e0"/>
+    <polygon points="200,210 200,150 230,125 230,185" fill="#ddc89e"/>
+  </g>
+</svg>

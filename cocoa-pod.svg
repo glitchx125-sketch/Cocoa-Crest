@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#ece0cf"/>
+  <ellipse cx="200" cy="262" rx="150" ry="16" fill="#d8c6ac"/>
+  <!-- whole pod -->
+  <g transform="translate(120,150) rotate(-20)">
+    <path d="M0 -70 C45 -60 45 60 0 70 C-45 60 -45 -60 0 -70 Z" fill="#c98a3a"/>
+    <path d="M0 -70 C45 -60 45 60 0 70 C-45 60 -45 -60 0 -70 Z" fill="none" stroke="#b3742a" stroke-width="3"/>
+    <path d="M0 -68 V68 M-18 -64 V64 M18 -64 V64" stroke="#b3742a" stroke-width="3" fill="none"/>
+  </g>
+  <!-- cut-open pod -->
+  <g transform="translate(255,160) rotate(18)">
+    <path d="M0 -70 C45 -60 45 60 0 70 C-45 60 -45 -60 0 -70 Z" fill="#e0a857"/>
+    <path d="M0 -60 C30 -52 30 52 0 60 C-30 52 -30 -52 0 -60 Z" fill="#f3e7cf"/>
+    <g fill="#7b5836">
+      <ellipse cx="0" cy="-32" rx="11" ry="15"/>
+      <ellipse cx="0" cy="0" rx="11" ry="15"/>
+      <ellipse cx="0" cy="32" rx="11" ry="15"/>
+    </g>
+  </g>
+</svg>
